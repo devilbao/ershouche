@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>评估单管理</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+                <label class="col-sm-0 control-label form-label">客户电话：</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="text" />
+                </div>
+                <label class="col-sm-0 control-label form-label">车牌号码：</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="text" />
+                </div>
+            </div>
+            <div class="form-group flex" style="margin-top: 20px;">
+                <label class="col-sm-0 control-label form-label " style="margin-left: 14px;">车架号：</label>
+                <div class="col-sm-4 " style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="text" />
+                </div>
+                <label class="col-sm-0 control-label form-label">车牌品牌：</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <select class="form-control col-sm-1" required>
+                        <option value="">--奔驰--</option>
+                        <option value="1">奥迪</option>
+                        <option value="2">奔驰</option>
+                        <option value="3">宝马</option>
+                        <option value="4">保时捷</option>
+                        <option value="5">沃尔沃</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group flex" style="margin-top: 20px;">
+                <label class="col-sm-0 control-label form-label " >评估时间：</label>
+                <div class="col-sm-4 " style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="datetime-local" />
+                </div>
+                <label class="col-sm-0 control-label form-label" style="margin-right: 10px">至</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="datetime-local" />
+                </div>
+            </div>
+            <div class="form-group flex" style="margin-top: 10px" >
+                <div class="col-sm-3" style="margin-left: 80%;">
+                    <button class="btn btn-primary btn-w-md" style="margin-right: 20px;">查询</button>
+                    <button class="btn btn-primary btn-w-md">重置</button>
+                </div>       
+        </div>
+        <div class="table-responsive" style="margin-top: 10px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <th>客户姓名</th>
+                      <th>客户电话</th>
+                      <th>车辆品牌</th>
+                      <th>车牌号码</th>
+                      <th>车架号</th>
+                      <th>评估时间</th>
+                      <th>初登时间</th>
+                      <th>评估价格</th>
+                      <th>操 作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>吴先生</td>
+                        <td>13718800000</td>
+                        <td>奔驰</td>
+                        <td>京A12345</td>
+                        <td>ABCDEFG-00100210101</td>
+                        <td>2023-05-08</td>
+                        <td>2019-05-08</td>
+                        <td>30</td>
+                        <td>评估结果</td>
+                    </tr>
+                    <tr>
+                        <td>甘总</td>
+                        <td>13666688888</td>
+                        <td>沃尔沃</td>
+                        <td>京A12345</td>
+                        <td>ABCDEFG-00100210101</td>
+                        <td>2023-05-09</td>
+                        <td>2019-05-08</td>
+                        <td>25</td>
+                        <td>生成协议</td>
+                    </tr>
+                    <tr>
+                        <td>没先生</td>
+                        <td>13718800000</td>
+                        <td>宝马</td>
+                        <td>京A12345</td>
+                        <td>ABCDEFG-11008883332</td>
+                        <td>2023-05-10</td>
+                        <td>2019-05-08</td>
+                        <td>28</td>
+                        <td>评估历史</td>
+                    </tr>
+                  </tbody>
+            </table>
+            <nav aria-label="...">
+                <ul class="pagination pagination-sm">
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">14452</a></li>
+                  <li class="page-item"><a class="page-link" href="#">14453</a></li>
+                </ul>
+              </nav>
+        </div>
+    </form>
+</body>
+</html>
