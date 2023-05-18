@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收车协议业务审批</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <h5>收车协议模板</h5>
+        <div class="col-sm-12 " style="margin: 10% 0 5%;" >
+            <h2 style="text-align: center;">收车基本信息</h2>
+        </div>
+        <h5 class="mb-5">协议审批信息</h5>
+        <div class="col-sm-12 mb-3 " >
+            <div class="form-group flex">
+                <label class="col-sm-1 control-label form-label" >审批人：</label>
+                <div class="col-sm-4">
+                  <input maxlength="50" class="form-control" type="text" placeholder="默认登录用户" />
+                </div>
+                <label class="col-sm-1 control-label form-label" >审批时间：</label>
+                <div class="col-sm-5">
+                  <input maxlength="50" class="form-control" type="datetime-local" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-3" >
+            <div class="form-group flex">
+                <label class="col-sm-1 control-label form-label" >审批信息：</label>
+                <div class="col-sm-10">
+                    <textarea
+                      class="form-control"
+                      style="min-height: 100px"
+                      aria-label="With textarea"
+                    ></textarea>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-3" >
+            <div class="form-group flex">
+                <label class="col-sm-1 control-label form-label" >审批结果：</label>
+                <div class="col-sm-10">
+                    <div class="example-box">
+                      <label class="ftdms-radio radio-inline radio-primary">
+                        <input type="radio" name="e" /><span>同意</span>
+                      </label>
+                      <label class="ftdms-radio radio-inline radio-primary">
+                        <input type="radio" name="e" style="margin-left: 10px;"/><span>不同意</span>
+                      </label>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-sm-12 mb-3" >
+            <div class="form-group flex-center">
+                <button type="button" class="btn btn-primary btn-w-xl">保存</button>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

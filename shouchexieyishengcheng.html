@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收车协议生成</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <h5 style="margin-bottom: 15%;">收车基本信息</h5>
+        <h5>车辆置换信息</h5>
+
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex mb-3" style="margin-top: 2%;">
+              <label class="col-sm-1 control-label form-label">新车车型：</label>
+              <div class="col-sm-2">
+                <select class="form-control" required >
+                    <option value="">--请选择--</option>
+                    <option value="1"></option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group flex " >
+                <label class="col-sm-1  control-label form-label">置换内容：</label>
+                <div class="col-sm-5 "  >
+                    <textarea
+                      class="form-control"
+                      style="min-height: 100px"
+                      aria-label="With textarea"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-group flex" style="margin:5% 0 0 2%;">
+                <label class="col-sm-1 control-label form-label">车况确认单</label>
+                <label class="col-sm-1 control-label form-label">手续交接清单</label>
+            </div>
+            <div class="col-sm-12" >
+                <button class="btn btn-primary btn-w-lg" style="margin-left:40%">生成协议</button>
+            </div>
+
+            <div class="form-group flex " style="justify-content: left;margin: 5% 0 0 5%;">
+                <div class="col-sm-2" >
+                    <a href="" style="text-decoration:none" ><h3 style="color: rgb(0, 0, 255);">收车协议</h3></a>
+                </div>
+                <div class="col-sm-2" >
+                    <a href="" style="text-decoration:none"><h3 style="color: rgb(0, 0, 255);">寄售协议</h3></a>
+                    
+                </div>
+                <div class="col-sm-2" >
+                    <a href="" style="text-decoration:none"><h3 style="color: rgb(0, 0, 255);">处置申请表</h3></a>                
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

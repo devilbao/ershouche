@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>添加评估结果</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <div class="col-sm-12 mb-2 flex" style="margin-left: 10px;">
+            <div class="col-sm-2">
+                <label class="col-sm-0 control-label form-label" >客户姓名：</label>
+                <label class="col-sm-0 control-label form-label" >吴先生</label>
+            </div>
+            <div class="col-sm-2">
+                <label class="col-sm-0 control-label form-label" >联系电话：</label>
+                <label class="col-sm-0 control-label form-label" >13718800000</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-2 flex" style="margin-left: 10px;">
+            <div class="col-sm-2">
+                <label class="col-sm-0 control-label form-label" >车牌号码：</label>
+                <label class="col-sm-0 control-label form-label" >京A12345</label>
+            </div>
+            <div class="col-sm-2">
+                <label class="col-sm-0 control-label form-label" >行驶里程：</label>
+                <label class="col-sm-0 control-label form-label" >25000公里</label>
+            </div>
+            <div class="col-sm-2">
+                <label class="col-sm-0 control-label form-label" >车辆品牌：</label>
+                <label class="col-sm-0 control-label form-label" >奔驰</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-2 flex" style="margin-left: 10px;">
+            <div class="col-sm-3">
+                <label class="col-sm-0 control-label form-label" >初登时间：</label>
+                <label class="col-sm-0 control-label form-label" >2019-06-30</label>
+            </div>
+            <div class="col-sm-3">
+                <label class="col-sm-0 control-label form-label" >车架号码：</label>
+                <label class="col-sm-0 control-label form-label" >ABCDEFG-10010101010202021121</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-2 flex" style="margin: 2% 0 0 10px; " >
+            <div class="col-sm-3 flex">
+                <label class="col-sm-0 control-label form-label" >评估人：</label>
+                <div class="col-sm-10" >
+                    <input maxlength="50" class="form-control" type="text" />
+                </div>
+            </div>
+            <div class="col-sm-3 flex">
+                <label class="col-sm-0 control-label form-label" >评估时间：</label>
+                <div class="col-sm-10" >
+                    <input maxlength="50" class="form-control" type="datetime-local" />
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-2 flex"  >
+            <div class="col-sm-6 flex">
+                <label class="col-sm-0 control-label form-label" >评估信息：</label>
+                <div class="col-sm-11" style="margin-left:-4px ;" >
+                    <textarea
+                      class="form-control"
+                      style="min-height: 100px"
+                      aria-label="With textarea"
+                    ></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-2 flex" >
+            <div class="col-sm-2 flex">
+                <label class="col-sm-0 control-label form-label" >售卖方式：</label>
+                <label class="ftdms-radio radio-inline radio-primary" style="margin-right: 10px;">
+                    <input type="radio" name="I" /><span>置换</span>
+                </label>
+                <label class="ftdms-radio radio-inline radio-primary">
+                    <input type="radio" name="I" /><span>售卖</span>
+                </label>
+            </div>
+            <div class="col-sm-6 flex">
+                <label class="col-sm-0 control-label form-label" >评估价格：</label>
+                <div class="col-sm-5" >
+                    <input maxlength="50" class="form-control" type="text" placeholder="260000" />
+                </div>
+                <label class="col-sm-0 control-label form-label" style="margin-left: 5px;">元</label>
+            </div>
+        </div>
+        <div class="form-group flex" style="margin-top: 2%" >
+            <div class="col-sm-3" style="margin-left: 30%;">
+                <button class="btn btn-primary btn-w-lg" style="margin-right: 20px;">生成收车协议</button>
+                <button class="btn btn-primary btn-w-lg">保存</button>
+            </div>       
+        </div>
+    </form>
+</body>
+</html>
