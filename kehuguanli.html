@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>意向客户管理</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <form class="form-horizontal m">
+      <div class="col-sm-12 mb-3">
+        <div class="form-group flex">
+          <label class="col-sm-0 control-label form-label">客户电话：</label>
+          <div class="col-sm-6" style="margin-right: 10px">
+            <input maxlength="50" class="form-control" type="text" />
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-primary">查询</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>客户姓名</th>
+              <th>客户电话</th>
+              <th>信息来源</th>
+              <th>现车信息</th>
+              <th>新车意向</th>
+              <th>操 作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>吴总</td>
+              <td>13888888888</td>
+              <td>网络咨询</td>
+              <td>
+                现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息
+              </td>
+              <td>
+                新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向
+              </td>
+              <td>
+                <div class="btn-group">
+                  <div class="btn">回访</div>
+                  <div class="btn">删除</div>
+                  <div class="btn">
+                    <a href="./pinggudanluru.html" target="menuFrame">评估单</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>吴总</td>
+              <td>13888888888</td>
+              <td>网络咨询</td>
+              <td>
+                现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息
+              </td>
+              <td>
+                新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向
+              </td>
+              <td>
+                <div class="btn-group">
+                  <div class="btn">回访</div>
+                  <div class="btn">删除</div>
+                  <div class="btn">评估单</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>吴总</td>
+              <td>13888888888</td>
+              <td>网络咨询</td>
+              <td>
+                现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息
+              </td>
+              <td>
+                新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向
+              </td>
+              <td>
+                <div class="btn-group">
+                  <div class="btn">回访</div>
+                  <div class="btn">删除</div>
+                  <div class="btn">评估单</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>吴总</td>
+              <td>13888888888</td>
+              <td>网络咨询</td>
+              <td>
+                现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息现车信息
+              </td>
+              <td>
+                新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向新车意向
+              </td>
+              <td>
+                <div class="btn-group">
+                  <div class="btn">回访</div>
+                  <div class="btn">删除</div>
+                  <div class="btn">评估单</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">100</a></li>
+          <li class="page-item"><a class="page-link" href="#">101</a></li>
+          <li class="page-item"><a class="page-link" href="#">102</a></li>
+        </ul>
+      </nav>
+    </form>
+  </body>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/jconfirm/jquery-confirm.min.js"></script>
+  <script>
+    $(".page-item").on("click", function () {
+      $.confirm({
+        title: "对话框",
+        content: "一些内容...",
+        buttons: {
+          confirm: {
+            text: "确认",
+            action: function () {
+              $.alert("确认的!");
+            },
+          },
+          cancel: {
+            text: "关闭",
+            action: function () {
+              $.alert("取消的!");
+            },
+          },
+          somethingElse: {
+            text: "其他",
+            btnClass: "btn-blue",
+            keys: ["enter", "shift"],
+            action: function () {
+              $.alert("其他的选择？");
+            },
+          },
+        },
+      });
+    });
+  </script>
+</html>

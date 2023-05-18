@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>评估单录入</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <form class="form-horizontal m">
+      <h6>客户基本信息:</h6>
+      <div class="col-sm-12 mb-12">
+        <div class="col-sm-6 mr-5">客户姓名：XXX</div>
+        <div class="col-sm-6 mr-5">客户姓名：XXX</div>
+      </div>
+
+      <h6>车辆基本信息:</h6>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">车牌号码：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">发动机：</label>
+            <div class="col-sm-2 flex" style="align-items: center">
+              <input
+                class="col-sm-1 form-control"
+                type="text"
+              />&nbsp;&nbsp;缸&nbsp;&nbsp;
+              <input class="col-sm-1 form-control" type="text" /> &nbsp;&nbsp;升
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">出厂时间：</label>
+            <div class="col-sm-2 flex" style="align-items: center">
+              <input
+                class="col-sm-1 form-control"
+                type="text"
+              />&nbsp;&nbsp;年&nbsp;&nbsp;
+              <input class="col-sm-1 form-control" type="text" /> &nbsp;&nbsp;月
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">初登时间：</label>
+            <div class="col-sm-2 flex" style="align-items: center">
+              <input
+                class="col-sm-1 form-control"
+                type="text"
+              />&nbsp;&nbsp;年&nbsp;&nbsp;
+              <input class="col-sm-1 form-control" type="text" /> &nbsp;&nbsp;月
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-3">
+          <div class="form-group col-sm-12">
+            <label class="col-sm-4 control-label">车辆品牌：</label>
+            <select class="form-control col-sm-1" required>
+              <option value="">--请先择--</option>
+              <option value="1">奥迪</option>
+              <option value="2">奔驰</option>
+              <option value="3">宝马</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group col-sm-12">
+            <label class="col-sm-4 control-label"></label>
+            <select class="form-control col-sm-1" required>
+              <option value="">--请先择--</option>
+              <option value="1">GLC</option>
+              <option value="2">E300</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">车架号：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">车架号：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">车身颜色：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">内饰颜色：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">行驶里程：</label>
+            <div class="col-sm-8">
+              <input required class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">过户次数：</label>
+            <div class="col-sm-2 flex" style="align-items: center">
+              <input class="col-sm-1 form-control" type="text" />&nbsp;&nbsp;次
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h6>车辆配置信息：</h6>
+
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">变速箱：</label>
+            <div class="col-sm-12">
+              <select class="form-control" required>
+                <option value="1">店内咨询</option>
+                <option value="2">互联网咨询</option>
+                <option value="3">电话咨询</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">天窗：</label>
+            <div class="col-sm-12">
+              <select class="form-control" required>
+                <option value="1">店内咨询</option>
+                <option value="2">互联网咨询</option>
+                <option value="3">电话咨询</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">驱动方式：</label>
+            <div class="col-sm-12">
+              <select class="form-control" required>
+                <option value="1">店内咨询</option>
+                <option value="2">互联网咨询</option>
+                <option value="3">电话咨询</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label"> 座椅：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>手动</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>电动</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>皮革</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>翻毛皮</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>加热</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>记忆</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>通风</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>按摩</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>后排座椅加热</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label"> 倒车辅助：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>倒车雷达</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>前雷达</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>倒车影像</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>导航(原厂)</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>导航(加装)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label"> 后视镜：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>电动后视镜</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>后视镜加热</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>自动折叠</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label"> 车灯：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>卤素灯</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>氙气大灯</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>LED大灯</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>大灯清洗</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label"> 影音系统：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>CD</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>DVD</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>后排娱乐</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>电视</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label">其它车辆配置：</label>
+          <div class="col-sm-8">
+            <div class="example-box">
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>钢毂</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>铝毂</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>自动空调</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>多温区控温</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>蓝牙电话</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>无钥匙启动</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>无钥匙进入</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>多功能方向盘</span>
+              </label>
+              <label class="ftdms-checkbox checkbox-inline checkbox-primary">
+                <input type="checkbox" /><span>定速巡航</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label">详细车况：</label>
+          <div class="col-sm-10">
+            <textarea
+              class="form-control"
+              style="min-height: 100px"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="form-group">
+          <label class="col-sm-4 control-label">备注信息：</label>
+          <div class="col-sm-10">
+            <textarea
+              class="form-control"
+              style="min-height: 100px"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
