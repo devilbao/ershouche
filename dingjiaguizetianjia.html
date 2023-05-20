@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定价规则添加</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+                <label class="col-sm-0 control-label form-label">车系类型：</label>
+                <div class="col-sm-2" style="margin-right: 5%">
+                    <select class="form-control " required>
+                        <option value="1">A级</option>
+                        <option value="2">C级</option>
+                        <option value="3">GLC</option>
+                        <option value="4">E级</option>
+                        <option value="5">GLE</option>
+                      </select>
+                </div>
+                <label class="col-sm-0 control-label form-label">车辆年份：</label>
+                <div class="col-sm-2" >
+                    <select class="form-control " required>
+                        <option value="1">&lt;1年</option>
+                        <option value="2">1-2年</option>
+                        <option value="3">2-3年</option>
+                        <option value="4">3-4年</option>
+                        <option value="5">4-5年</option>
+                        <option value="5">&gt;5年</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+              <label class="col-sm-0 control-label form-label">付款方式：</label>
+              <div class="col-sm-11">
+                <div class="example-box">
+                  <label class="ftdms-radio radio-inline radio-primary">
+                    <input type="radio" name="e" /><span>全款</span>
+                  </label>
+                  <label class="ftdms-radio radio-inline radio-primary">
+                    <input type="radio" name="e" /><span>分期</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+              <label class="col-sm-0 control-label form-label">库存类型：</label>
+              <div class="col-sm-11">
+                <div class="example-box">
+                  <label class="ftdms-radio radio-inline radio-primary" style="margin-right: 10px;">
+                    <input type="radio" name="f" /><span>认证二手车</span>
+                  </label>
+                  <label class="ftdms-radio radio-inline radio-primary" style="margin-right: 10px;" >
+                    <input type="radio" name="f" /><span>非认证二手车</span>
+                  </label>
+                  <label class="ftdms-radio radio-inline radio-primary" style="margin-right: 10px;">
+                    <input type="radio" name="f" /><span>试驾车</span>
+                  </label>
+                  <label class="ftdms-radio radio-inline radio-primary" style="margin-right: 10px;">
+                    <input type="radio" name="f" /><span>寄售车</span>
+                  </label>
+                  <label class="ftdms-radio radio-inline radio-primary">
+                    <input type="radio" name="f" /><span>展车</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group flex col-sm-3 mb-3">
+            <label class="col-sm-0 control-label form-label">定价公式:</label>
+            <label class="col-sm-0 control-label form-label" style="margin-left: 10px;">成本价格 X （1+ </label>
+            <div class="col-sm-1" style="margin-right: 10px">
+                <input  class="form-control" type="text"  />
+            </div>
+            <label class="col-sm-0 control-label form-label">%）+</label>
+            <div class="col-sm-2" style="margin-right: 10px">
+                <input class="form-control" type="text"  />
+            </div>
+          </div>
+
+          <div class="form-group flex col-sm-8 mb-3">
+            <label class="col-sm-0 control-label form-label">生效周期：</label>
+            <div class="col-sm-2" style="margin-right: 10px">
+                <input  class="form-control" type="date"  />
+            </div>
+            <label class="col-sm-0 control-label form-label">--</label>
+            <div class="col-sm-2" style="margin-right: 10px">
+                <input  class="form-control" type="date"  />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="form-group flex">
+              <label class="col-sm-0 control-label">备注信息：</label>
+              <div class="col-sm-5">
+                <textarea
+                  class="form-control"
+                  style="min-height: 100px"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-w-xl" style="margin:10% 0 0 45%;">保存</button>
+    </form>
+</body>
+</html>

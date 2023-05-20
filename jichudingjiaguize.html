@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基础定价规则</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+                <label class="col-sm-0 control-label form-label">维护人：</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="text" placeholder="默认登录用户" />
+                </div>
+                <label class="col-sm-0 control-label form-label">维护时间：</label>
+                <div class="col-sm-4" style="margin-right: 10px">
+                    <input maxlength="50" class="form-control" type="datetime-local" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group flex col-sm-3 mb-3">
+                <label class="col-sm-0 control-label form-label">维护人：</label>
+                <label class="col-sm-0 control-label form-label">成本价格 X （1+ </label>
+                <div class="col-sm-1" style="margin-right: 10px">
+                    <input  class="form-control" type="text"  />
+                </div>
+                <label class="col-sm-0 control-label form-label">%）+</label>
+                <div class="col-sm-2" style="margin-right: 10px">
+                    <input class="form-control" type="text"  />
+                </div>
+        </div>
+
+        <div class="form-group flex col-sm-8 mb-3">
+            <label class="col-sm-0 control-label form-label">生效周期：</label>
+            <div class="col-sm-2" style="margin-right: 10px">
+                <input  class="form-control" type="date"  />
+            </div>
+            <label class="col-sm-0 control-label form-label">--</label>
+            <div class="col-sm-2" style="margin-right: 10px">
+                <input  class="form-control" type="date"  />
+            </div>
+        </div>
+
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+              <label class="col-sm-0 control-label form-label">新车意向：</label>
+              <div class="col-sm-6">
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  style="min-height: 100px"
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-w-md" style="height: 50%;margin:3% 0 0 3% ;">保存</button>
+            </div>
+          </div>
+        <h6 style="margin-top: 4%;">历史基础定价规则</h6>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <th>维护时间</th>
+                      <th>维护人</th>
+                      <th>定价公式</th>
+                      <th>生效周期</th>
+                      <th>备注信息</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    <tr>
+                      <td>2023-01-01 12:00</td>
+                      <td>管理员</td>
+                      <td>成本价 X (1+10%)+0</td>
+                      <td>2023-01-01  至 2023-12-31</td>
+                      <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                      </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr>
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr> 
+                    <tr>
+                        <td>2023-01-01 12:00</td>
+                        <td>管理员</td>
+                        <td>成本价 X (1+10%)+0</td>
+                        <td>2023-01-01  至 2023-12-31</td>
+                        <td>当前形势很好，大家都倾向二手车的价格</td>
+                    </tr>  
+                </tbody>
+            </table>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">14452</a></li>
+              <li class="page-item"><a class="page-link" href="#">14453</a></li>
+            </ul>
+          </nav>
+    </form>
+</body>
+</html>
