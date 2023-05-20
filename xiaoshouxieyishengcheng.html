@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>销售协议生成</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <form class="form-horizontal m">
+        <h5><strong>车辆信息</strong></h5>
+        <div class="col-sm-12 mb-7" style="text-align: center;margin-top: 10%;">
+            <div class="form-group flex mb-3">
+                <div class="col-sm-6">
+                    <a href="" style="text-decoration: none;"><h2>转卖协议</h2></a>
+                </div>
+                <div class="col-sm-6"><a href="" style="text-decoration: none;"><h2>店端销售协议</h2></a></div>
+            </div>
+        </div>
+        <h5 style="margin-top: 10%;"><strong>车辆售卖信息</strong></h5>
+        
+        <div class="row mb-3">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">客户姓名：</label>
+                <div class="col-sm-8">
+                  <input required class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">联系电话：</label>
+                <div class="col-sm-8">
+                  <input required class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="row mb-3">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">身份证号码/信用代码：</label>
+                <div class="col-sm-8">
+                  <input required class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 mb-3">
+            <div class="form-group flex">
+              <label class="col-sm-0 control-label">付款方式：</label>
+              <input type="radio" name="g" /><span style="margin-right: 2%;">全款</span>
+              <input type="radio" name="g" /><span>分期</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">总成本价格：</label>
+                <div class="col-sm-8">
+                  <input required class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">基础卖价：</label>
+                <div class="col-sm-8">
+                  <input required class="form-control" type="text" />
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                  <label class="col-sm-4 control-label">调整后卖价：</label>
+                  <div class="col-sm-8">
+                    <input required class="form-control" type="text" />
+                  </div>      
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12" >
+            <label style="margin: 5% 0 0 50%;color: blue;">订单最终卖价：120,000 元，销售利润：10,000 元</label>
+            <button type="button" class="btn btn-primary btn-w-xl" style="margin-left: 10px;">生成协议</button>
+        </div>
+
+    </form>
+</body>
+</html>
