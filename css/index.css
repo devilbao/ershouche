@@ -17,9 +17,14 @@
 .left-menu{
   width: 200px;
   height: 100%;
+  overflow-y: scroll;
   background-color: #34495e;
+  scrollbar-width: none;
+   -ms-overflow-style: none; 
 }
-
+.left-menu::-webkit-scrollbar {
+    display: none; 
+}
 .right-content{
   flex:1;
   background: #e4dfdf;
