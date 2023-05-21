@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手续交接清单</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jconfirm/jquery-confirm.min.css" />
+    <script src="js/bootstrap.js"></script>
+    <style>
+        *{
+              margin: 0;
+              padding: 0;
+          }
+          .box{
+              width: 1000px;
+              margin:0 auto;
+          }
+          table{
+              width: 100%;
+              
+          }
+          table td{
+              width: 111px;
+              border: 1px solid black;
+          }
+         table tr{
+            height: 30px;
+         }
+         .dq{
+            text-align: center;
+         }
+      </style>
+</head>
+<body>
+    <div class="box">
+        <h5 style="text-align: center;"><strong>车辆手续交接清单</strong></h5>
+      <p>
+            <table>
+                <tr>
+                    <td class="dq">客户名称</td>
+                    <td colspan="3"></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td colspan="5"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">车型</td>
+                    <td colspan="2"></td>
+                    <!-- <td></td> -->
+                    <td colspan="2" class="dq">车牌号</td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="9"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td rowspan="2" class="dq">序号</td>
+                    <td colspan="2" rowspan="2" class="dq">内容</td>
+                    <!-- <td></td> -->
+                    <td colspan="2" class="dq">车辆手续交付明细</td>
+                    <!-- <td></td> -->
+                    <td colspan="4" rowspan="2" class="dq">备注</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                    <td class="dq">已交付</td>
+                    <td class="dq">未交付</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">1</td>
+                    <td colspan="2">购车发票（或过户票）</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">2</td>
+                    <td colspan="2">机动车登记证书</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">3</td>
+                    <td colspan="2">机动车登记证书</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">4</td>
+                    <td colspan="2">购置税本及发票</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">5</td>
+                    <td colspan="2">车船税发票</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">6</td>
+                    <td colspan="2">商业险保单及发票</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4">归收购方所有（确定签字：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;）</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">7</td>
+                    <td colspan="2">交强险保单及发票</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4">归收购方所有</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">8</td>
+                    <td colspan="2">机动车登记证书</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4" class="dq">1把&nbsp;&nbsp;&nbsp;&nbsp;2把&nbsp;&nbsp;&nbsp;&nbsp;3把</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">9</td>
+                    <td colspan="2">车辆说明书</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">10</td>
+                    <td colspan="2">保养手册</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">11</td>
+                    <td colspan="2">车辆违章</td>
+                    <!-- <td></td> -->
+                    <td colspan="2"><span style="margin-left: 92%;">条</span></td>
+                    <!-- <td></td> -->
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">12</td>
+                    <td colspan="2">身份证</td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td class="dq">13</td>
+                    <td colspan="2"></td>
+                    <!-- <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="9" rowspan="3">
+                        交付人已确认上述所交手续真实、齐全、有效，并归收购方所有。交付人确认车内已无贵重物品，如出现相关物品遗失与收购方（收取人）无关，由交付人自行承担&nbsp;&nbsp;本协议一经双方签字立即生效，一式两份，具有同等法律效应。
+                        本协议未尽事宜，双方应友好商讨，另行补充。不陪同旧车过户的客户身份证原件在客户旧车手续全齐的情况下载过完户以后的2-5个工作日回到店里并由销售顾问告知客户，陪同过户的客户由客户自行保管自己的身份证原件（如出现丢失、损坏等情况与店方无关），
+                        客户旧车在过完户后的3-7个工作日后会更新出指标，由店方更新出指标的销售顾问会及时通知客户并与客户协商新车后续的办理事宜！公户情况同上。备注：（如果客户旧车因旧车手续或车辆等各种原因造成不能及时过户的后果由客户自行承担）
+                    </td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+            </table>
+      </p>
+      <p>收取人签字确认：</p>
+      <p>交付人签字确认：</p>
+      <p>日期：2017-06-07</p>
+    </div>
+</body>
+</html>
