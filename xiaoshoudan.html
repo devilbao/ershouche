@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>销售单</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .red {
+            font-size: 25px;
+            color: red;
+        }
+
+        .xh {
+            text-decoration: underline;
+        }
+
+        .left {
+            text-align: left !important;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            height: 1200px;
+        }
+
+        table td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p style="text-align: right;margin-top: 20px;">编号: <span class="red">0002886</span></p>
+        <h2 style="text-align: center;"><strong>波士<span
+                    class="xh">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>二手车销售单</strong>
+        </h2>
+        <table>
+            <tr>
+                <td colspan="15" class="left">
+                    日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日
+                </td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="5">客户信息</td>
+                <td colspan="2">车主/单位</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">联系人</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">证件名称</td>
+                <!-- <td></td> -->
+                <td>□ 身份证</td>
+                <td>□ 军官证</td>
+                <td colspan="3">□ 税务登记证 □ 其他证件</td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="2">证件号码</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">移动电话</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">固定电话</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">地址</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td> -->
+                <td colspan="2">邮政编码</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">代办人姓名</td>
+                <!-- <td></td> -->
+                <td colspan="3"></td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="2">代办人联系方式</td>
+                <!-- <td></td> -->
+                <td colspan="3"></td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="2">代办人身份证</td>
+                <!-- <td></td> -->
+                <td colspan="2"></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>车辆信息</td>
+                <td colspan="2">车辆型号</td>
+                <!-- <td></td> -->
+                <td colspan="3"></td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="2">车辆识别号</td>
+                <!-- <td></td> -->
+                <td colspan="3"></td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="2">车身/内饰颜色</td>
+                <!-- <td></td> -->
+                <td colspan="2"></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">收款信息</td>
+                <td colspan="2">市场指导价</td>
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">销售价格</td>
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">购买方式</td>
+                <!-- <td></td> -->
+                <td colspan="2">□ 全款</td>
+                <!-- <td></td> -->
+                <td colspan="5">□ 分期</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="5" class="left">□ 旧车置换 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置换价格 ￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="5">分期信息</td>
+                <td colspan="2">分期贷款公司</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">保险公司</td>
+                <!-- <td></td> -->
+                <td colspan="5">□ 中保 □ 太平洋 □ 平安 □ 其他 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">首付比例/年限</td>
+                <!-- <td></td> -->
+                <td colspan="5">
+                    (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;&nbsp;%\&nbsp;&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;&nbsp;年
+                </td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td rowspan="4" colspan="2">保险险种</td>
+                <!-- <td></td> -->
+                <td colspan="5">□ 交强 □ 车损 □ 盗抢 □ 不计免赔</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">首付车款</td>
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5">□ 划痕 □ 玻璃 □ 涉水 □ 车上人员</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">贷款金额</td>
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5">□ 自燃 □ 找不到第三方 □ 其他 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2">金融专员签字</td>
+                <!-- <td></td> -->
+                <td colspan="5"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5">□ 三者 （□ 200万 □ 150万 □ 100万 □（&nbsp;&nbsp;&nbsp;&nbsp;）万）</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">咨询服务费</td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">代收保费合集</td>
+                <!-- <td></td> -->
+                <td colspan="3" class="left">￥</td>
+                <!-- <td></td> -->
+                <td>车船税</td>
+                <td colspan="2" class="left">￥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">代办费/验车费</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">其他1：</td>
+                <!-- <td></td> -->
+                <td>含车款</td>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">售后套餐</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">其他2：</td>
+                <!-- <td></td> -->
+                <td>含车款</td>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">装饰精品</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">其他3：</td>
+                <!-- <td></td> -->
+                <td>含车款</td>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">其他</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td colspan="5" class="left">￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="2">其他4：</td>
+                <!-- <td></td> -->
+                <td>含车款</td>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="4" class="left">款项合计： ￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td>大写：</td>
+                <td colspan="10" class="left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拾
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仟
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拾
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分
+                </td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="4" class="left">实收款： ￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="4" class="left">定金: ￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="3" class="left">贷款金额： ￥</td>
+                <!-- <td></td>
+                    <td></td> -->
+                <td colspan="4" class="left">二手车置换抵车款： ￥</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="15" class="left">以上信息经确认准确、无误。
+                    客户（代办人）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    二手车销售顾问：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    二手车行政：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    二手车经理：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="15" class="left">
+                    收款方式：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    □ 现金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;□ 刷卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;□
+                    支票&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    □ 汇款&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;□
+                    其他（&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;）
+                </td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="5" class="left">收款人签字：</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="5" class="left">财务经理签字：</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                <td colspan="5" class="left">总经理签字：</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="15" class="left" style="height: 50px !important;vertical-align: top;
+                    ">备注：</td>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+            </tr>
+        </table>
+        <p style="margin-left: 100px;">此单一式四联: 第一联(白)财务联&nbsp;&nbsp;&nbsp;&nbsp;第二联 (粉) 提证联&nbsp;&nbsp;&nbsp;&nbsp;第三联
+            (蓝) CRM&nbsp;&nbsp;&nbsp;&nbsp;第四联 (黄) 销售行政</p>
+    </div>
+</body>
+
+</html>
